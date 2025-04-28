@@ -49,6 +49,9 @@ function getRandomIndex() {
        document.querySelector(".secretScreen").style.display = "flex";
    }
    
+   document.addEventListener("dblclick", function(event) {
+       event.preventDefault();  
+   });
 changeButton.onclick = changecolor;
 secretButton.onclick = goSecret; 
 
