@@ -53,8 +53,8 @@ body {
 }
 
 .secretScreen img {
-    width: 100px;
-    height: 100px;
+    width: 35%;
+    height: 30vh;
 }
 
 #change-button:active, #change-button:focus {
