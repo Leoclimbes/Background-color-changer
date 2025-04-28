@@ -1,5 +1,7 @@
 let changeButton = document.getElementById("change-button");
-let secretButton = document.getElementById("secret-button")
+let secretButton = document.getElementById("secret-button");
+let goHomeBtn = document.getElementById("goHome")
+
 const colorsArray = [
         "rgb(255, 0, 0)", "rgb(0, 255, 0)", "rgb(0, 0, 255)", "rgb(255, 255, 0)", "rgb(0, 255, 255)", "rgb(255, 0, 255)", "rgb(192, 192, 192)", "rgb(128, 128, 128)", "rgb(128, 0, 0)", "rgb(128, 128, 0)",
         "rgb(0, 128, 0)", "rgb(128, 0, 128)", "rgb(0, 128, 128)", "rgb(0, 0, 128)", "rgb(255, 165, 0)", "rgb(255, 192, 203)", "rgb(218, 112, 214)", "rgb(75, 0, 130)", "rgb(240, 230, 140)", "rgb(173, 216, 230)",
@@ -47,6 +49,10 @@ function getRandomIndex() {
  }
  function goSecret() {
        document.querySelector(".secretScreen").style.display = "flex";
+       document.querySelector("main").style.display = "inline-block";
+   }
+   function goHome() {
+    document.querySelector(".secretScreen").style.display = "none";
    }
    
    document.addEventListener("dblclick", function(event) {
@@ -60,5 +66,6 @@ function getRandomIndex() {
        }
    }, { passive: false });
 changeButton.onclick = changecolor;
-secretButton.onclick = goSecret; 
+secretButton.onclick = goSecret;
+goHomeBtn.onclick = goHome; 
 
