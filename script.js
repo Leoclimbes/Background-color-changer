@@ -47,7 +47,8 @@ function getRandomIndex() {
  }
  function goSecret() {
        document.querySelector(".secretScreen").style.display = "flex";
-       
- }
+   }
+   
 changeButton.onclick = changecolor;
 secretButton.onclick = goSecret; 
+
